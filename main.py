@@ -25,6 +25,6 @@ async def verify(card_url, video_url):
 	return face_verify(card_url, video_url)
 
 
-@app.post("/ocr-front")
+@app.post("/get-ocr")
 async def ocr_front():
 	return extract_front_info("Data/card/bless_card.jpg")
